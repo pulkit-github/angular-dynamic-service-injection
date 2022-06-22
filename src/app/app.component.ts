@@ -29,15 +29,11 @@ export class AppComponent {
   ) {}
   s1Call() {
     this.config.whichService = 's1';
-    setTimeout(() => {
-      this.callApi();
-    }, 1000);
+    this.callApi();
   }
   s2Call() {
     this.config.whichService = 's2';
-    setTimeout(() => {
-      this.callApi();
-    }, 1000);
+    this.callApi();
   }
   callApi() {
     this.response = this.apicall.request();
